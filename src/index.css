@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/*
+  UPDATED: Theme defined using the recommended CSS Custom Property syntax.
+*/
+@theme {
+  --color-brand-blue-logo: #1E40AF;
+  --color-brand-blue-banner: #2563EB;
+
+  /* Font for regular text (if needed) */
+  --font-roc-grotesk: "Roc Grotesk", sans-serif;
+  
+  /* ADD THIS: A new font family specifically for the compressed style */
+  --font-roc-grotesk-compressed: "Roc Grotesk Compressed", sans-serif;
+  
+  --font-extrabold: 800;
+}
+
+/* 
+  @font-face rules
+*/
+@font-face {
+  font-family: 'Roc Grotesk';
+  src: url('./assets/font/Roc_Grotesk_Complete_Family-sanet.cd/Roc Grotesk Complete Family/Kostic - Roc Grotesk Bold.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+/* ADD THIS NEW FONT-FACE RULE for the compressed font used in the design */
+@font-face {
+  font-family: 'Roc Grotesk Compressed';
+  src: url('./assets/font/Roc_Grotesk_Complete_Family-sanet.cd/Roc Grotesk Complete Family/Kostic - Roc Grotesk Compressed Medium.otf') format('opentype');
+  font-weight: 800; /* ExtraBold */
+  font-style: normal;
+}
+
+/* 
+  Body style (can remain the same or default to the compressed font if you prefer)
+*/
+body {
+  font-family: var(--font-roc-grotesk); /* Or var(--font-roc-grotesk-compressed) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

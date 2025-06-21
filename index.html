@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pip Beach Plug</title>
+
+    <!-- Basic Favicons -->
+    <link rel="icon" href="/pip.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/pip.svg" /> <!-- Modern iOS versions can use SVG for this -->
+
+    <!-- Web App Manifest (for PWA features, should be a .webmanifest or .json file) -->
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+
+    <!-- Open Graph / Facebook / WhatsApp Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pipbeachplug.com/" />
+    <meta property="og:title" content="Pip Beach Plug" />
+    <meta property="og:description" content="Your one-stop shop for beach essentials." />
+    <!-- 
+      THIS IS THE MOST IMPORTANT FIX: 
+      Use a .png or .jpg image with absolute URL.
+      Make sure `pip-og-image.png` is in your /public folder.
+    -->
+    <meta property="og:image" content="https://pipbeachplug.com/pip-og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Optional: Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="pipbeachplug.com" />
+    <meta property="twitter:url" content="https://pipbeachplug.com/" />
+    <meta name="twitter:title" content="Pip Beach Plug" />
+    <meta name="twitter:description" content="Your one-stop shop for beach essentials." />
+    <meta name="twitter:image" content="https://pipbeachplug.com/pip-og-image.png" />
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
