@@ -54,9 +54,7 @@ It demonstrates the ability to deliver a full solution from database to UI, with
   - Browse and add products to cart from the public interface.
   - Place an order, which generates a WhatsApp message with all order details, ready to send.
 
-## Screenshots
 
-> _Add screenshots here to showcase the UI for both admin and customer sides._
 
 ## Getting Started
 
